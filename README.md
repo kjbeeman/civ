@@ -10,7 +10,10 @@ Got this working in about five minutes, and for my use case, I'm not concerned w
 
 ## How do I use this?
 
-`docker run -v $DIR_WITH_CLOUD_INIT:/ cloud-init-verifier $cloud_init_file`
+Just mount the directory containing your cloud_init_file to `/verify` and the only argument is the filename. 
+
+`docker run -v $DIR_WITH_CLOUD_INIT:/verify kjbeeman/clinver:tagname $cloud_init_file`
+
 
 ## It doesn't work!
 
