@@ -1,6 +1,6 @@
 from ubuntu:latest
 
-WORKDIR /
+WORKDIR /verify
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     cloud-init \
